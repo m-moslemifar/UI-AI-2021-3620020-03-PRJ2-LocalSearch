@@ -17,6 +17,14 @@ import numpy as np
 # ______________________________________________________________________________
 # Functions on Sequences and Iterables
 
+def sld(here: str, there: str):
+    here_x = ord(here[0])
+    here_y = ord(here[1])
+    there_x = ord(there[0])
+    there_y = ord(there[1])
+    dist = np.sqrt(pow(there_x - here_x, 2) + pow(there_y - here_y, 2))
+    return dist
+
 
 def sequence(iterable):
     """Converts iterable to sequence, if it is not already one."""
